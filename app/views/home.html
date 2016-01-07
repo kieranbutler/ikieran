@@ -1,0 +1,80 @@
+  <section class="home">
+    <!--<canvas id="canvas" width="1000" height="900" style="display: inline;"></canvas>-->
+      <div class="content">
+        <header>
+          <div class="logo">
+              <a href="/"><img src='images/logo.gif'/></a>
+          </div>
+
+          <nav class="navbar navbar-pills">
+            <div>
+              <ul class="nav navbar-nav">
+                  <li><a href="#"><i class="fa fa-home fa-2x"></i> <span>Home</span></a></li>
+                  <li><a href="#work"><i class="fa fa-wrench fa-3x"></i> <span>Work</span></a></li>
+                  <li><a href="#contact"><i class="fa fa-phone-square fa-2x"></i> <span>Contact</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+        <div class='highlight'>
+          <p>I have worked as a web developer for a few different London Drupal agencies for the past 2 and a half years, the latest one being - Axis12, Check me out on LinkedIn for a more detailed career history.</p>
+          <div class="hero-image">
+            <img src="images/hero.png">
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li><i class="fa fa-facebook"></i></li>
+              <li><i class="fa fa-linkedin"></i></li>
+              <li><i class="fa fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-12 col-md-12'>
+        <div class='portfolio-container' ng-controller="PortfolioController">
+            <div class="col-xs-6 col-sm-4 col-md-3 portfolio-item" ng-repeat='item in portfolioItems'>
+
+              <div class="content">
+                <div class="bg">
+                  <div class="front">
+                    <img style="width: 100%;" src="{{item.field_portfolio_image}}" alt="">
+                  </div>
+
+                  <div class="backCon">
+                    <div class="back">
+                      <div class="header">
+                          <a href="/portfolio/care-quality-commission" rel="bookmark">
+                            <h4 class="white">{{item.node_title}}</h4>
+                          </a>
+                          <div class="sep"></div>
+                      </div>
+                      <div class="description">
+                        <p class="white">{{item.field_standfirst}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+          <div>
+            <ul class="nav navbar-nav">
+                <li><p class="text-muted">Copyright © 2014, Kieran butler</p></li>
+                <li><p class="text-muted"></p></li>
+                <li><p class="text-muted">Powered by Drupal</p></li>
+                <li><p class="text-muted">Place sticky footer content here.</p></li>
+            </ul>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>

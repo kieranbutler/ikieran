@@ -1,0 +1,39 @@
+//@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+//$font-family-base: 'Raleway', sans-serif;
+// Import bootstrap and fontawesome
+//@import "bootstrap";
+//@import "font-awesome";
+
+// Custom
+@import 'utils/variables';
+@import 'base/typography';
+@import 'layout/header';
+@import 'components/portfolio';
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: $font-color--dark;
+  background-color: $background--light;
+  //padding: $half-space;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+section.home {
+  background: #FFFFFF;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#F29F6C));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #F29F6C);
+  position: relative;
+
+  div.content {
+    position: absolute;
+    top:0;
+  }
+
+  canvas {
+
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ikieran",
+  "authors": [
+    "Kieran Butler <kieranbutler22@gmail.com>"
+  ],
+  "description": "personal portfolio & blog",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

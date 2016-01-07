@@ -1,0 +1,84 @@
+/*
+ * Portfolio
+ */
+.portfolio-container {
+  .portfolio-item {
+    height: 180px;
+    margin-bottom:20px;
+    &:hover  .back{
+      -webkit-transform:rotate3d(1,0,0,0deg);
+      -moz-transform:rotate3d(1,0,0,0deg);
+      -o-transform:rotate3d(1,0,0,0deg);
+      -ms-transform:rotate3d(1,0,0,0deg);
+      transform:rotate3d(1,0,0,0deg);
+      opacity:0.9;
+    }
+
+    &:hover  .front{
+      -webkit-transform:translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+      -moz-transform:translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+      -o-transform:translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+      -ms-transform:translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+      transform:translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+      opacity:0;
+    }
+
+    .bg {
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+
+    p, a {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .back {
+      background: $orange;
+      opacity: 0;
+      display: block;
+      //height:220px;
+      //position: absolute;
+      background-position: center center;
+      -webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+      -moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+      -o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+      -ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+      transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -webkit-transform-origin: 50% 0%;
+      -moz-transform-origin: 50% 0%;
+      -o-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+    }
+
+    .front {
+      opacity: 1;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      position: absolute;
+      background-position: center center;//
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -webkit-transform-origin: 50% 0%;
+      -moz-transform-origin: 50% 0%;
+      -o-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+    }
+  }
+}

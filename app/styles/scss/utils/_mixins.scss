@@ -1,0 +1,59 @@
+///////// Breakpoints ///////////
+$extraSmall: 320px;
+$mobile: 480px;
+$tablet: 750px; /*Important changed from standard 768px to suit Designs*/
+$desktop: 992px;
+$desktop-large: 1200px;
+
+@mixin extraSmall {
+  @media (min-width: #{$extraSmall}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$desktop-large}) {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin font-smoothing() {
+  // Font antialising on Mac OS X
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
